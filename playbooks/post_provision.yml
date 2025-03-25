@@ -2,7 +2,7 @@
   become: true  # Run tasks with root privileges
   tasks:
     - name: Install httpd package
-      ansible.builtin.dnf5:
+      ansible.builtin.dnf:
         name: httpd
         state: present
 
