@@ -40,6 +40,8 @@
                 chpasswd: { expire: False }
                 ssh_authorized_keys:
                 - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK3yEjQI7FyF6QPG80kKO2YpoFipMmsGieF2JYAfKfi6
+                bootcmd:
+                - sudo dnf install -y httpd
             name: cloudinit
   
   - name: Wait for virtual machine IP to be populated
