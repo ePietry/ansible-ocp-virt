@@ -34,6 +34,8 @@
             name: containerdisk
           - cloudInitNoCloud:
               userData: |-
+                bootcmd:
+                - sudo yum install -y python3-libdnf5
                 #cloud-config
                 user: fedora
                 password: fedora
