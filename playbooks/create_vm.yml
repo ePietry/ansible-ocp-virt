@@ -35,7 +35,9 @@
           - cloudInitNoCloud:
               userData: |-
                 #cloud-config
-                # The default username is: fedora
+                user: fedora
+                password: fedora
+                chpasswd: { expire: False }
                 ssh_authorized_keys:
                 - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK3yEjQI7FyF6QPG80kKO2YpoFipMmsGieF2JYAfKfi6
             name: cloudinit
