@@ -16,7 +16,7 @@
       labels:
         app: httpd
       instancetype:
-        name: cx1.4xlarge
+        name: u1.medium
       preference:
         name: fedora
       spec:
