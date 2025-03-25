@@ -1,6 +1,10 @@
 - hosts: namespace_workloads
   become: true  # Run tasks with root privileges
   tasks:
+    - name: Ensure python3-libdnf5 is installed
+      ansible.builtin.package:
+        name: python3-libdnf5
+        state: present
     - name: Install httpd package
       ansible.builtin.package:
         name: httpd
