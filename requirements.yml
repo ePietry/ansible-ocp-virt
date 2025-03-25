@@ -1,4 +1,7 @@
 collections:
 - name: redhat.openshift
+  version: 4.0.1
 - name: redhat.openshift_virtualization
+  version: 2.1.0
 - name: kubernetes.core
+  version: 5.1.0
