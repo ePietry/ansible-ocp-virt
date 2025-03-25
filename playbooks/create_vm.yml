@@ -52,3 +52,7 @@
     retries: 60
     delay: 10
     until: (vmi.resources[0].status.interfaces[0]['ipAddress'] | default('')) | length > 0
+
+  - name: Wait for machine full boot
+    ansible.builtin.wait_for:
+      timeout: 60  
